@@ -1,6 +1,6 @@
-# Guides for .NET SDK
+# .NET guides
 
-This repo contains guides for building apps using .NET SDK. The guides are applicable for .NET core 3.1 and higher.
+This repo contains guides for developing apps using .NET SDK. These guides are applicable for .NET core 3.1 and higher.
 
 ## Guides
 
