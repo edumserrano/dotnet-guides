@@ -1,0 +1,50 @@
+name: Build guides sln
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+    paths:
+    - 'src/**'
+  pull_request:
+    branches: [ master ]
+    paths:
+    - 'src/**'
+
+env:
+  SLN_FILEPATH : ${{github.workspace}}/DotNet.Sdk.Guides.sln
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix: 
+        os: [ubuntu-latest, windows-latest]    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Test
+      shell: pwsh
+      run: Write-Host $SLN_FILEPATH
+    - name: Test2
+      shell: pwsh
+      run: Write-Host env.SLN_FILEPATH
+    - name: Test3
+      shell: pwsh
+      run: Write-Host ${{env.SLN_FILEPATH}}
+    - name: Clears local NuGet resources
+      if: matrix.os == 'windows-latest' # required due to bug when using dotnet cli on windows-latest. See https://github.com/dotnet/core/issues/5881 and https://github.com/actions/setup-dotnet/issues/155
+      shell: pwsh
+      run: dotnet nuget locals all --clear
+    - name: Restore dependencies
+      shell: pwsh
+      run: dotnet restore DotNet.Sdk.Guides.sln
+    - name: Build
+      shell: pwsh
+      run: dotnet build DotNet.Sdk.Guides.sln --no-restore
+    - name: Test
+      shell: pwsh
+      run: dotnet test DotNet.Sdk.Guides.sln --no-build --verbosity normal
