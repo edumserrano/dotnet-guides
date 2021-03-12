@@ -11,6 +11,7 @@ on:
     branches: [ master ]
     paths:
     - 'src/**'
+    - '.github/workflows/all-guides-sln.yml'
 
 env:
   SLN_FILEPATH : ${{github.workspace}}/DotNet.Sdk.Guides.sln
