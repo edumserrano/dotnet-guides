@@ -1,6 +1,6 @@
-# .NET guides
+# Guides for .NET SDK
 
-This repo contains guides for developing apps using .NET SDK. These guides are applicable for .NET core 3.1 and higher.
+This repo contains guides for building apps using .NET SDK. The guides are applicable for .NET core 3.1 and higher.
 
 ## Guides
 
@@ -8,3 +8,25 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 * [Code coverage on multiple projects using Coverlet](/docs/guides/code-coverage.md)
 * [Debug NuGet package with included symbols](/docs/guides/debug-pdg-included-on-nuget.md)
 * [Share data across the lifetime of an HTTP request](/docs/guides/share-data-with-async-local.md)
+
+## GitHub Workflows
+
+| Worflow                   |      Status and link      |
+|---------------------------|:-------------------------:|
+| [all-guides-sln](https://github.com/edumserrano/dot-net-sdk-guides/blob/main/.github/workflows/all-guides-sln.yml)             |  ![Build Status](https://github.com/edumserrano/dot-net-sdk-guides/workflows/Build%20guides%20sln/badge.svg) |
+
+## Building
+
+### Using Visual Studio
+
+1) Clone the repo and open the `DotNet.Sdk.Guides.sln` solution file.
+2) Press build on Visual Studio.
+
+### Using dotnet CLI
+
+1) Clone the repo and browse to the directory using your favorite shell.
+2) To build the solution that contains all guides run: **`dotnet build DotNet.Sdk.Guides.sln`**
+
+## License
+
+This project is licensed under the [MIT license](https://licenses.nuget.org/MIT).
