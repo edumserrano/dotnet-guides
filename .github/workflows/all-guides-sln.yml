@@ -38,3 +38,7 @@ jobs:
     - name: Build
       shell: pwsh
       run: dotnet build ${{env.SLN_FILEPATH}} --no-restore
+
+    - name: Test222
+      shell: pwsh
+      run: dotnet build ${{env.SLN_FILEPATH}} --no-restore
