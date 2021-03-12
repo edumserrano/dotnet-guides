@@ -15,25 +15,17 @@ This repo contains guides for building apps using .NET SDK. The guides are appli
 |---------------------------|:-------------------------:|
 | [all-guides-sln](https://github.com/edumserrano/dot-net-sdk-guides/blob/main/.github/workflows/all-guides-sln.yml)             |  ![Build Status](https://github.com/edumserrano/dot-net-sdk-guides/workflows/Build%20guides%20sln/badge.svg) |
 
-
-
 ## Building
 
 ### Using Visual Studio
 
-1) Clone the repo and open one of the solution files:
-   - **DotNet.Sdk.Extensions.sln:** source for the extensions.
-   - **DotNet.Sdk.Extensions.Demos.sln:** demo projects for the extensions and the guides.
-
+1) Clone the repo and open the `DotNet.Sdk.Guides.sln` solution file.
 2) Press build on Visual Studio.
 
 ### Using dotnet CLI
 
 1) Clone the repo and browse to the directory using your favorite shell.
-
-2) Run:
-   - **`dotnet build DotNet.Sdk.Extensions.sln`:** to build the source for the extensions.
-   - **`dotnet build DotNet.Sdk.Extensions.Demos.sln`:** to build the demos for the extensions and the guides.
+2) To build the solution that contains all guides run: **`dotnet build DotNet.Sdk.Guides.sln`**
 
 ## License
 
