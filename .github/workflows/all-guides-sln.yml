@@ -14,7 +14,7 @@ on:
     - '.github/workflows/all-guides-sln.yml'
 
 env:
-  SLN_FILEPATH : ${{github.workspace}}/DotNet.Sdk.Guides.sln
+  SLN_FILEPATH : ${{github.workspace}}/DotNet.Guides.sln
 
 jobs:
   build:

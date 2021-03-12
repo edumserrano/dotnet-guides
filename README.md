@@ -19,13 +19,13 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 
 ### Using Visual Studio
 
-1) Clone the repo and open the `DotNet.Sdk.Guides.sln` solution file.
+1) Clone the repo and open the `DotNet.Guides.sln` solution file.
 2) Press build on Visual Studio.
 
 ### Using dotnet CLI
 
 1) Clone the repo and browse to the directory using your favorite shell.
-2) To build the solution that contains all guides run: **`dotnet build DotNet.Sdk.Guides.sln`**
+2) To build the solution that contains all guides run: **`dotnet build DotNet.Guides.sln`**
 
 ## License
 
