@@ -5,15 +5,11 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'src/**'
-      - '!.github/workflows/**'
-      - '.github/workflows/all-guides-sln.yml'
+    - 'src/**'
   pull_request:
     branches: [ master ]
     paths:
-      - 'src/**'
-      - '!.github/workflows/**'
-      - '.github/workflows/all-guides-sln.yml'
+    - 'src/**'
 
 env:
   SLN_FILEPATH : ${{github.workspace}}/DotNet.Sdk.Guides.sln
