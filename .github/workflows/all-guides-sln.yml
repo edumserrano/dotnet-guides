@@ -3,13 +3,15 @@ name: Build guides sln
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
     - 'src/**'
+    - '.github/workflows/all-guides-sln.yml'
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
     paths:
     - 'src/**'
+    - '.github/workflows/all-guides-sln.yml'
 
 env:
   SLN_FILEPATH : ${{github.workspace}}/DotNet.Sdk.Guides.sln
