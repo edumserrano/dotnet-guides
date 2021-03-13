@@ -29,4 +29,4 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 
 ## License
 
-This project is licensed under the [MIT license](https://licenses.nuget.org/MIT).
+This project is licensed under the [MIT license](./LICENSE).
