@@ -8,6 +8,7 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 * [Code coverage on multiple projects using Coverlet](/docs/guides/code-coverage.md)
 * [Debug NuGet package with included symbols](/docs/guides/debug-pdg-included-on-nuget.md)
 * [Share data across the lifetime of an HTTP request](/docs/guides/share-data-with-async-local.md)
+* [How to test logging when using Microsoft.Extensions.Logging](/docs/guides/testing-logs.md)
 
 ## GitHub Workflows
 
