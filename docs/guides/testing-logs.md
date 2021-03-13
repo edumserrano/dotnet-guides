@@ -14,6 +14,14 @@ You can research online and you will find many articles on this subject such as:
 
 ## How to
 
-For now I believe that using [MELT](https://github.com/alefranz/MELT) is the best approach to take. It will work for unit tests and integration tests. It also integrates with popular logging frameworks such as Serilog and NLog.
+For now I believe that using [MELT](https://github.com/alefranz/MELT) is the best approach to take.
 
-See METL's readme to understand how to configure it for [unit tests](https://github.com/alefranz/MELT#quickstart) and for [integration tests](https://github.com/alefranz/MELT#quickstart-for-aspnet-core-integration-tests)
+From MELT's README:
+
+> MELT is a free, open-source, testing library for the .NET Standard _Microsoft Extensions Logging_ library. It is a solution to easily test logs.
+
+> It is a repackaging with a sweetened API and some omissions of [Microsoft.Extensions.Logging.Testing](https://github.com/aspnet/Extensions/tree/master/src/Logging/Logging.Testing), a library used internally in [ASP.NET Core](https://github.com/aspnet/AspNetCore) for testing the logging, given that [there is currently no plan to offer an official package for it](https://github.com/aspnet/Extensions/issues/672#issuecomment-532850535).
+
+MELT will work for unit tests and integration tests. It also integrates with popular logging frameworks such as Serilog and NLog.
+
+See METL's README to understand how to configure it for [unit tests](https://github.com/alefranz/MELT#quickstart) and for [integration tests](https://github.com/alefranz/MELT#quickstart-for-aspnet-core-integration-tests)
