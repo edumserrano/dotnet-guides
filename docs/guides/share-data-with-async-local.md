@@ -119,4 +119,4 @@ With the above you have now set the stage so that you can set values on a instan
 
 ## Demos
 
-Analyse the code of the demo app [AmbientDataDemo](/demos/guides/AmbientDataDemo/README.md) to gain a better understanding.
+Analyse the code of the demo app [AmbientDataDemo](../../src/guides/ambient-data/AmbientDataDemo/README.md) to gain a better understanding.

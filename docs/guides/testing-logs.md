@@ -25,3 +25,11 @@ From MELT's README:
 MELT will work for unit tests and integration tests. It also integrates with popular logging frameworks such as Serilog and NLog.
 
 See METL's README to understand how to configure it for [unit tests](https://github.com/alefranz/MELT#quickstart) and for [integration tests](https://github.com/alefranz/MELT#quickstart-for-aspnet-core-integration-tests)
+
+## Notes
+
+* When running tests using MELT and Serilog make sure the those tests do **NOT** run in parallel. For instance, using xUnit that can easily be configured via the [`Collection` attribute](https://xunit.net/docs/running-tests-in-parallel). The reason why this is needed is because the Serilog logger is setup on a static global property and if tests run in parallel you will get incorrect results.
+
+## Demos
+
+Analyse the code of the demo app [TestingLogsWithSerilog](../../src/guides/serilog/TestingLogsWithSerilog/README.md) to gain a better understanding of how to test logs in integration tests using Serilog and MELT.

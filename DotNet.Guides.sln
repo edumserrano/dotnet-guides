@@ -25,6 +25,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppWithGenericHost",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppWithGenericHost2", "src\guides\generic-host\GenericHostDemos\ConsoleAppWithGenericHost2\ConsoleAppWithGenericHost2.csproj", "{1AFE2BC7-F510-4F88-A043-7AC9F3C8432C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "serilog", "serilog", "{4D19C71B-7D7B-4EA8-8004-440E4E34C104}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestingLogsWithSerilog", "TestingLogsWithSerilog", "{CF497D77-3B7A-4708-8E19-6362F05DD49C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingLogsWithSerilogDemo", "src\guides\serilog\TestingLogsWithSerilog\TestingLogsWithSerilogDemo\TestingLogsWithSerilogDemo.csproj", "{48AACA7D-A68E-4FF4-B5C2-98C1412BD94F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingLogsWithSerilogDemo.Tests", "src\guides\serilog\TestingLogsWithSerilog\TestingLogsWithSerilogDemo.Tests\TestingLogsWithSerilogDemo.Tests.csproj", "{6D328F28-9A6F-427F-AD6F-E699EB4A8D3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +59,14 @@ Global
 		{1AFE2BC7-F510-4F88-A043-7AC9F3C8432C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AFE2BC7-F510-4F88-A043-7AC9F3C8432C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AFE2BC7-F510-4F88-A043-7AC9F3C8432C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48AACA7D-A68E-4FF4-B5C2-98C1412BD94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48AACA7D-A68E-4FF4-B5C2-98C1412BD94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48AACA7D-A68E-4FF4-B5C2-98C1412BD94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48AACA7D-A68E-4FF4-B5C2-98C1412BD94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D328F28-9A6F-427F-AD6F-E699EB4A8D3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D328F28-9A6F-427F-AD6F-E699EB4A8D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D328F28-9A6F-427F-AD6F-E699EB4A8D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D328F28-9A6F-427F-AD6F-E699EB4A8D3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +82,10 @@ Global
 		{53A44003-0CCA-436B-B66B-A1193C48D16A} = {CC362EDF-E578-4334-B079-0E9D652B2C42}
 		{26198CD6-56D3-46D2-B2A7-2FB56BB85469} = {CC362EDF-E578-4334-B079-0E9D652B2C42}
 		{1AFE2BC7-F510-4F88-A043-7AC9F3C8432C} = {CC362EDF-E578-4334-B079-0E9D652B2C42}
+		{4D19C71B-7D7B-4EA8-8004-440E4E34C104} = {6410E6D8-ED29-4B0A-B123-81E0F50B08A7}
+		{CF497D77-3B7A-4708-8E19-6362F05DD49C} = {4D19C71B-7D7B-4EA8-8004-440E4E34C104}
+		{48AACA7D-A68E-4FF4-B5C2-98C1412BD94F} = {CF497D77-3B7A-4708-8E19-6362F05DD49C}
+		{6D328F28-9A6F-427F-AD6F-E699EB4A8D3F} = {CF497D77-3B7A-4708-8E19-6362F05DD49C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30D7160D-5F70-4D4F-A5E4-A84A049A4A7D}
