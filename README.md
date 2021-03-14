@@ -4,11 +4,11 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 
 ## Guides
 
-* [Use cases for generic host](/docs/guides/generic-host-use-cases.md)
-* [Code coverage on multiple projects using Coverlet](/docs/guides/code-coverage.md)
-* [Debug NuGet package with included symbols](/docs/guides/debug-pdg-included-on-nuget.md)
-* [Share data across the lifetime of an HTTP request](/docs/guides/share-data-with-async-local.md)
-* [How to test logging when using Microsoft.Extensions.Logging](/docs/guides/testing-logs.md)
+* [Use cases for generic host](./docs/guides/generic-host-use-cases.md)
+* [Code coverage on multiple projects using Coverlet](./docs/guides/code-coverage.md)
+* [Debug NuGet package with included symbols](./docs/guides/debug-pdg-included-on-nuget.md)
+* [Share data across the lifetime of an HTTP request](./docs/guides/share-data-with-async-local.md)
+* [How to test logging when using Microsoft.Extensions.Logging](./docs/guides/testing-logs.md)
 
 ## GitHub Workflows
 
@@ -27,6 +27,10 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 
 1) Clone the repo and browse to the directory using your favorite shell.
 2) To build the solution that contains all guides run: **`dotnet build DotNet.Guides.sln`**
+
+### Notes
+
+There are also individual solutions for each of the demo apps for the guides present at the folder level for the demo. Example: `AmbientDataDemo.sln` at `src/guides/ambient-data/AmbientDataDemo`.
 
 ## License
 

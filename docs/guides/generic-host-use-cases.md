@@ -52,11 +52,4 @@ See the demos for more information of how to use the generic host and take advan
 
 ## Demos
 
-Analyse the code of the demo apps to gain a better understanding.
-
-There's 4 demos for this:
-
-1) [ConsoleAppWithGenericHost](../../src/guides/generic-host/GenericHostDemos/README.md)
-2) [ConsoleAppWithGenericHost2](../../src/guides/generic-host/GenericHostDemos/README.md)
-3) [AWSLambdaWithGenericHost](../../src/guides/generic-host/GenericHostDemos/README.md)
-4) [AWSLambdaWithGenericHost2](../../src/guides/generic-host/GenericHostDemos/README.md)
+Analyse the code of the [demo apps](../../src/guides/generic-host/GenericHostDemos/README.md) to gain a better understanding on how to use the generic host to gain access to some of the .NET features such as Dependency Injection and Configuration.
