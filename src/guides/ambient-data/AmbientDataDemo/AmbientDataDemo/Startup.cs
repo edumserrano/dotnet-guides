@@ -40,7 +40,7 @@ namespace AmbientDataDemo
 
             app.Use(async (context, next) =>
             {
-                // Set the ambient data to some value
+                // Initialize the ambient data
                 var ambientDataAccessor = context.RequestServices.GetRequiredService<IMyAmbientDataAccessor>();
                 ambientDataAccessor.MyAmbientData = new MyAmbientData
                 {

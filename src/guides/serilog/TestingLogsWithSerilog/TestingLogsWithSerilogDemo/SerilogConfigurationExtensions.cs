@@ -34,7 +34,9 @@ namespace TestingLogsWithSerilogDemo
 #if DEBUG   
             return hostBuilder.UseSerilog(ConfigureLogger, writeToProviders: true);
 #endif
+#pragma warning disable 162 // disable unreachable code warning
             return hostBuilder.UseSerilog(ConfigureLogger);
+#pragma warning restore 162
         }
 
         private static void ConfigureLogger(HostBuilderContext hostBuilderContext, LoggerConfiguration loggerConfiguration)

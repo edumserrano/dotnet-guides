@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -38,8 +39,12 @@ namespace TestingLogsWithSerilogDemo.Tests
             var response = await client.GetAsync("/WeatherForecast");
             var testLoggerSink = _webApplicationFactory.GetSerilogTestLoggerSink();
             var logEntry = testLoggerSink.LogEntries.FirstOrDefault(x => x.LoggerName == "TestingLogsWithSerilogDemo.Controllers.WeatherForecastController");
+            logEntry.ShouldNotBeNull();
             logEntry.Message.ShouldBe("test message from \"WeatherForecastController\"");
-            logEntry.Properties.ShouldContain(x => x.Key == "controller" && x.Value == "WeatherForecastController");
+            logEntry.Properties.ShouldContain(x =>
+                x.Key == "controller" &&
+                x.Value.ToString() != null &&
+                x.Value.ToString()!.Equals("WeatherForecastController", StringComparison.OrdinalIgnoreCase)); 
             logEntry.Properties.ShouldContain(x => x.Key == "MachineName");
         }
     }

@@ -15,7 +15,7 @@ namespace AmbientDataDemo.Controllers
         }
 
         [HttpGet]
-        public MyAmbientData Get()
+        public MyAmbientData? Get()
         {
             return _ambientDataAccessor.MyAmbientData;
         }
