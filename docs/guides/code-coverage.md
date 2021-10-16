@@ -1,4 +1,4 @@
-﻿# Code coverage on multiple projects using Coverlet
+﻿# Cross platform code coverage on multiple projects using Coverlet
 
 ## Motivation
 
@@ -12,6 +12,18 @@ The information required to understand how to achieve this was scattered accross
 - [Solution wide coverage #357](https://github.com/coverlet-coverage/coverlet/issues/357)
 - [coverlet.msbuild 2.8.0 does not combine coverage when using MergeWith #678](https://github.com/coverlet-coverage/coverlet/issues/678#issuecomment-571212806)
 - [Implement threshold per solution #598](https://github.com/coverlet-coverage/coverlet/issues/598#issuecomment-551174529)
+
+## Preface
+
+[Coverlet](https://github.com/coverlet-coverage/coverlet) is a cross platform code coverage framework for .NET that you can integrate in two ways:
+
+- [Coverlet integration with VSTest (a.k.a. Visual Studio Test Platform)](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/VSTestIntegration.md#passing-runsettings-arguments-through-commandline)
+- [Coverlet integration with MSBuild](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md)
+
+Although the recommended integration for Coverlet is using VSTest integration, **the implemented solution uses MSBuild integration** because the VSTest integration does not support merging the code coverage results as part of executing the `dotnet test` command. As per the [VSTest integration documentation](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/VSTestIntegration.md#coverlet-options-supported-by-vstest-integration):
+> At the moment VSTest integration doesn't support all features of msbuild and .NET tool, for instance show result on console, report merging and threshold validation. We're working to fill the gaps.
+
+Alternatively, a solution to this problem could be done using VSTest integration if the tooling producing the code coverage report accepts multiple code coverage files, or if you have a step where you manually merge the code coverage files before generating the report. Using the MSBuild integration you can get a single code coverage output as part of executing the `dotnet test` command.
 
 ## How to
 
@@ -38,6 +50,11 @@ Notes on the above command:
 - On the `/p:CoverletOutputFormat` argument the `%2` is as a comma separator. In powershell we have to do it like this as explained [here](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md#note-for-powershell--azure-devops-users).
 
 - You **should** use an absolute directory for the `/p:MergeWith` argument. If you use a relative path then the path will be relative to each of csproj files for the test projects which means that when storing the code coverage results to merge from one test project to another the directory **might not be correct and cause an incorrect end result**. Unfortunately the docs example for [how to use merge with in msbuild does show the usage by using a relative path](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/Examples/MSBuild/MergeWith/HowTo.md). **Do not use relative directories** as shown in that example unless you know what you are doing.
+
+- the `m:1` is required to avoid erroneous results when merging the code coverage files. [As per documentation](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/Examples/MSBuild/MergeWith/HowTo.md):
+  >You can merge also running dotnet test and merge with single command from a solution file, but you need to ensure that tests will run sequentially(-m:1). This slow down testing but avoid invalid coverage result.
+
+- the `logger` flag is only needed if you need to upload the `.trx` files with the test results to your CI system so that you can have a more detailed report on the results of the tests.
 
 ## Include or exclude results from code coverage
 
