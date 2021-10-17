@@ -47,6 +47,8 @@ Notes on the above command:
   - provide an absolute path to be used as the directory where the test results and merge with reports will be stored. In powershell we are using the `Join-Path -Path (Get-Location) ...` function to do this.
   - potentially update the `/p:CoverletOutputFormat` argument value to instead of using `%2` as a comma separator to actually use a comma `,`or the equivalent for your shell so that msbuild translates it to a comma.
 
+- The `results-directory` is set to the concatenation of the **current directory** where the command is executed and `tests/test-results`.
+
 - On the `/p:CoverletOutputFormat` argument the `%2` is as a comma separator. In powershell we have to do it like this as explained [here](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md#note-for-powershell--azure-devops-users).
 
 - You **should** use an absolute directory for the `/p:MergeWith` argument. If you use a relative path then the path will be relative to each of csproj files for the test projects which means that when storing the code coverage results to merge from one test project to another the directory **might not be correct and cause an incorrect end result**. Unfortunately the docs example for [how to use merge with in msbuild does show the usage by using a relative path](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/Examples/MSBuild/MergeWith/HowTo.md). **Do not use relative directories** as shown in that example unless you know what you are doing.
