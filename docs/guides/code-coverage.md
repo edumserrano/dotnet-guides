@@ -56,7 +56,7 @@ Notes on the above command:
 - the `m:1` is required to avoid erroneous results when merging the code coverage files. [As per documentation](https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/Examples/MSBuild/MergeWith/HowTo.md):
   >You can merge also running dotnet test and merge with single command from a solution file, but you need to ensure that tests will run sequentially(-m:1). This slow down testing but avoid invalid coverage result.
 
-- the `logger` flag is usually used to produce a `.trx` files with the test results which you can upload to your CI system, such as Azure DevOps, so that you can have a more detailed report on the results of the tests. You can pass multiple `logger` flags and chose different loggers such as `--logger html` if you want the rest results in HTML format.
+- the `logger` flag is usually used to produce a `.trx` files with the test results which you can upload to your CI system, such as Azure DevOps, so that you can have a more detailed report on the results of the tests. You can pass multiple `logger` flags and chose different loggers such as `--logger html` if you want the rest results in HTML format. *Note*: you can open `.trx` files in Visual Studio and see the results in the `Test Results` window.
 
 ## Include or exclude results from code coverage
 
