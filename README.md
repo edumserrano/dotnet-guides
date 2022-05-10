@@ -4,9 +4,10 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 
 ## Guides
 
+* [Debug NuGet package with included symbols](./docs/guides/debug-pdg-included-on-nuget.md)
+* [Line numbers in stack traces](./docs/guides/line-numbers-in-stack-traces.md)
 * [Use cases for generic host](./docs/guides/generic-host-use-cases.md)
 * [Cross platform code coverage on multiple projects using Coverlet](./docs/guides/code-coverage.md)
-* [Debug NuGet package with included symbols](./docs/guides/debug-pdg-included-on-nuget.md)
 * [Share data across the lifetime of an HTTP request](./docs/guides/share-data-with-async-local.md)
 * [How to test logging when using Microsoft.Extensions.Logging](./docs/guides/testing-logs.md)
 
