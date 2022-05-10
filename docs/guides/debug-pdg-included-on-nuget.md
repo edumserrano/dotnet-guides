@@ -36,7 +36,7 @@ The above should be added inside the `Project` tag of the csproj and will make s
 If you are also [producing documentation with your NuGet package](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc), including it with the NuGet package and the documentation is not showing up in intellisense then consider copying the documentation to the output directory as well by extending the above to:
 
 ```
-<!-- https://github.com/dotnet/sdk/issues/1458#issuecomment-420456386 -->
+<!-- https://github.com/dotnet/sdk/issues/1458#issuecomment-695119194 -->
 <Target Name="_ResolveCopyLocalNuGetPackagePdbsAndXml" Condition="$(CopyLocalLockFileAssemblies) == true" AfterTargets="ResolveReferences">
     <ItemGroup>
         <ReferenceCopyLocalPaths
