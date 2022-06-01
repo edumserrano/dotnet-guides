@@ -15,7 +15,7 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 
 | Worflow                   |      Status and link      |
 |---------------------------|:-------------------------:|
-| [all-guides-sln](https://github.com/edumserrano/dot-net-sdk-guides/blob/main/.github/workflows/all-guides-sln.yml)             |  ![Build Status](https://github.com/edumserrano/dot-net-sdk-guides/workflows/Build%20guides%20sln/badge.svg) |
+| [all-guides-sln](https://github.com/edumserrano/dotnet-guides/blob/main/.github/workflows/all-guides-sln.yml)             |  ![Build Status](https://github.com/edumserrano/dotnet-guides/workflows/Build%20guides%20sln/badge.svg) |
 
 ## Building
 
