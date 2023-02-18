@@ -4,6 +4,7 @@ This repo contains guides for developing apps using .NET SDK. These guides are a
 
 ## Guides
 
+* [Improve throw exceptions with ThrowHelper pattern](./docs/guides/throw-helper.md)
 * [Debug NuGet package with included symbols](./docs/guides/debug-pdg-included-on-nuget.md)
 * [Line numbers in stack traces](./docs/guides/line-numbers-in-stack-traces.md)
 * [Use cases for generic host](./docs/guides/generic-host-use-cases.md)
