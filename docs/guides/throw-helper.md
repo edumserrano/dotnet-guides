@@ -17,7 +17,7 @@ generated to throw the exception."
 > "... there is a pattern that can help both eliminate the extra assembly code instructions, and optimize the code so that registers
 are not set-up needlessly."
 
->**Note**
+>[!NOTE]
 >
 > The `[MethodImpl(MethodImplOptions.NoInlining)]` attribute for the `Create<Exception>` method is what avoids the extra exception setup assembly
 instructions from being populated on the call sites that use this method. This attribute doesn't seem to be required when the method only contains a `throw` statement as you can see on the [ArgumentNullException](https://github.com/dotnet/runtime/blob/9e81ca53137c587bce0f30bf60f13bb10fbdd204/src/libraries/System.Private.CoreLib/src/System/ArgumentNullException.cs#L63) and [ArgumentException](https://github.com/dotnet/runtime/blob/9e81ca53137c587bce0f30bf60f13bb10fbdd204/src/libraries/System.Private.CoreLib/src/System/ArgumentException.cs#L110).
