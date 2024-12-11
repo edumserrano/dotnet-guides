@@ -5,7 +5,9 @@ namespace AmbientDataDemo.AmbientData
     public class MyAmbientDataAccessor : IMyAmbientDataAccessor
     {
         private static readonly AsyncLocal<MyAmbientDataHolder> _myAmbientDataCurrent = new AsyncLocal<MyAmbientDataHolder>();
-        
+
+        // In many cases, this could probably be just a simple getter/setter like in https://github.com/edumserrano/dotnet-guides/blob/main/docs/guides/share-data-with-async-local.md#example-2. 
+        // However, this implementation follows the guidance from the HttpContextAccessor implementation https://github.com/dotnet/aspnetcore/blob/3e08b597894891f05556dc0bee23da53cb1b3e11/src/Http/Http/src/HttpContextAccessor.cs.
         public MyAmbientData? MyAmbientData
         {
             get
