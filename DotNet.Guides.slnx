@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/guides/" />
+  <Folder Name="/src/guides/ambient-data/" />
+  <Folder Name="/src/guides/ambient-data/AmbientDataDemo/">
+    <Project Path="src/guides/ambient-data/AmbientDataDemo/AmbientDataDemo/AmbientDataDemo.csproj" />
+  </Folder>
+  <Folder Name="/src/guides/generic-host/" />
+  <Folder Name="/src/guides/generic-host/GenericHostDemos/">
+    <Project Path="src/guides/generic-host/GenericHostDemos/AWSLambdaWithGenericHost/AWSLambdaWithGenericHost.csproj" />
+    <Project Path="src/guides/generic-host/GenericHostDemos/AWSLambdaWithGenericHost2/AWSLambdaWithGenericHost2.csproj" />
+    <Project Path="src/guides/generic-host/GenericHostDemos/ConsoleAppWithGenericHost/ConsoleAppWithGenericHost.csproj" />
+    <Project Path="src/guides/generic-host/GenericHostDemos/ConsoleAppWithGenericHost2/ConsoleAppWithGenericHost2.csproj" />
+  </Folder>
+  <Folder Name="/src/guides/serilog/" />
+  <Folder Name="/src/guides/serilog/TestingLogsWithSerilog/">
+    <Project Path="src/guides/serilog/TestingLogsWithSerilog/TestingLogsWithSerilogDemo.Tests/TestingLogsWithSerilogDemo.Tests.csproj" />
+    <Project Path="src/guides/serilog/TestingLogsWithSerilog/TestingLogsWithSerilogDemo/TestingLogsWithSerilogDemo.csproj" />
+  </Folder>
+</Solution>

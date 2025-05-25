@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="TestingLogsWithSerilogDemo.Tests/TestingLogsWithSerilogDemo.Tests.csproj" />
+  <Project Path="TestingLogsWithSerilogDemo/TestingLogsWithSerilogDemo.csproj" />
+</Solution>

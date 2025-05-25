@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AWSLambdaWithGenericHost/AWSLambdaWithGenericHost.csproj" />
+  <Project Path="AWSLambdaWithGenericHost2/AWSLambdaWithGenericHost2.csproj" />
+  <Project Path="ConsoleAppWithGenericHost/ConsoleAppWithGenericHost.csproj" />
+  <Project Path="ConsoleAppWithGenericHost2/ConsoleAppWithGenericHost2.csproj" />
+</Solution>
