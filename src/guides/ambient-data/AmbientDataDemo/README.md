@@ -6,7 +6,7 @@ This app is an ASP.NET web api that shows how to use `AsyncLocal<T>` to share am
 
 ## How to run
 
-* Open the `AmbientDataDemo.sln` which can be found at `src/guides/ambient-data/AmbientDataDemo`.
+* Open the `AmbientDataDemo.slnx` which can be found at `src/guides/ambient-data/AmbientDataDemo`.
 * From Visual Studio, set the `AmbientDataDemo` project as the Startup Project.
 * Run the project.
 * The browser should open on the swagger page at https://localhost:5001/swagger/index.html.

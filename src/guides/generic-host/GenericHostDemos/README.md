@@ -8,7 +8,7 @@ This app is a console app that shows how to make use of the generic host to prov
 
 ### How to run - ConsoleAppWithGenericHost
 
-* Open the `GenericHostDemos.sln` which can be found at `src/guides/generic-host/GenericHostDemos`.
+* Open the `GenericHostDemos.slnx` which can be found at `src/guides/generic-host/GenericHostDemos`.
 * From Visual Studio, set the `ConsoleAppWithGenericHost` project as the Startup Project.
 * Run the project.
 
@@ -20,7 +20,7 @@ This app is a console app that shows how to make use of the generic host to prov
 
 ### How to run - ConsoleAppWithGenericHost2
 
-* Open the `GenericHostDemos.sln` which can be found at `src/guides/generic-host/GenericHostDemos`.
+* Open the `GenericHostDemos.slnx` which can be found at `src/guides/generic-host/GenericHostDemos`.
 * From Visual Studio, set the `ConsoleAppWithGenericHost2` project as the Startup Project.
 * Run the project.
 
@@ -30,7 +30,7 @@ This app is an AWS Lambda created with the template for an empty function. The t
 
 ### How to run - AWSLambdaWithGenericHost
 
-* Open the `GenericHostDemos.sln` which can be found at `src/guides/generic-host/GenericHostDemos`.
+* Open the `GenericHostDemos.slnx` which can be found at `src/guides/generic-host/GenericHostDemos`.
 * From Visual Studio, set the `AWSLambdaWithGenericHost` project as the Startup Project.
 * Run the project.
 
@@ -42,7 +42,7 @@ This app is an AWS Lambda created with the template for an empty function. The t
 
 ### How to run - AWSLambdaWithGenericHost2
 
-* Open the `GenericHostDemos.sln` which can be found at `src/guides/generic-host/GenericHostDemos`.
+* Open the `GenericHostDemos.slnx` which can be found at `src/guides/generic-host/GenericHostDemos`.
 * From Visual Studio, set the `AWSLambdaWithGenericHost2` project as the Startup Project.
 * Run the project.
 

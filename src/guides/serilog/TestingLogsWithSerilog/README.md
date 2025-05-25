@@ -6,7 +6,7 @@ This app is an ASP.NET web api and a test project that shows how to use [MELT](h
 
 ## How to run
 
-* Open the `TestingLogsWithSerilog.sln` which can be found at `src/guides/serilog/TestingLogsWithSerilog`.
+* Open the `TestingLogsWithSerilog.slnx` which can be found at `src/guides/serilog/TestingLogsWithSerilog`.
 * Run the tests. Both tests should pass.
 
 ## Notes
